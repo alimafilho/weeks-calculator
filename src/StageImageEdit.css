@@ -1,0 +1,131 @@
+.canvas-preview {
+    background-color: #fff;
+}
+
+.canvas-preview .konvajs-content {
+  margin: 0 auto;
+}
+
+.stage-edit-container {
+    
+}
+
+.stage-edit-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px;
+  border-top: 1px solid #ccc;
+}
+
+.stage-edit-header .stage-icon {
+  width: 100%;
+  max-width: 23px;
+  max-height: 23px;
+  margin-right: 0.5em;
+}
+
+.stage-edit-header h5 {
+  color: #333;
+  font-size: 0.9em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.stage-legend {
+  font-size: 0.9em;
+  color: #666;
+}
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+  list-style-type: none;
+  padding: 5px 0;
+  margin: 0;
+  background-color: #222;
+
+  background: -webkit-linear-gradient(#222, #333);
+  background: linear-gradient(#222, #333);
+  border-bottom: 1px solid #000;
+}
+
+.list-items li {
+  width: 20%;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.list-items li div {
+  max-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin: 1px auto;
+}
+
+.list-items li div.active {
+  border: 3px dotted #f00;
+  max-width: 38px;
+  height: 38px;
+  box-shadow: 0 0 0 1px inset #333;
+}
+
+.button-download {
+  padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #10ac84;
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+
+  max-width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.button-download svg {
+  margin-right: 0.5em;
+}
+
+.button-download-container {
+   width: 100%;
+   position: relative;
+   margin-top: 0.2em;
+}
+@media (min-width: 320px) and (min-height: 481px) {
+  .list-items li {
+    width: 20%;
+    cursor: pointer;
+    min-height: 50px;
+  }
+
+  .list-items li div {
+    max-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 3px auto;
+  }
+  
+  .list-items li div.active {
+    border: 3px dotted #f00;
+    max-width: 42px;
+    height: 42px;
+    box-shadow: 0 0 0 1px inset #333;
+  }
+
+  .button-download-container {
+    width: 100%;
+    position: relative;
+    margin-top: 0.7em;
+  }
+} 
